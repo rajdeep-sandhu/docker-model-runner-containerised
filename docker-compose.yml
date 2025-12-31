@@ -1,6 +1,6 @@
 services:
   app:
-    build: ./app
+    build: .
     env_file: 'backend.env'
     ports:
       - "8501:8501"
