@@ -10,6 +10,8 @@ RUN uv sync --frozen
 # Copy the rest of the app code
 COPY app/ .
 
+# Add environment to path
 ENV PATH="/app/.venv/bin:$PATH"
+
 # Set the default command
 CMD ["streamlit", "run", "main.py"]
