@@ -7,7 +7,7 @@ RUN pip install uv
 COPY pyproject.toml uv.lock ./
 RUN uv sync --frozen
 
-# Copy the rest of the app code
+# Copy the rest of the app folder contents to WORKDIR
 COPY app/ .
 
 # Add environment to path
