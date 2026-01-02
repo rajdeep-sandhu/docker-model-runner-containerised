@@ -20,11 +20,17 @@ Based on [The Easiest Ways to Run LLMs Locally - Docker Model Runner Tutorial](h
 - Clone the repo.
 - Ensure Docker Desktop is running.
 - In the root folder:
+  
   ```bash
+  docker compose build
+
+  # Run the app
   docker compose up
   ```
+
 - Open [http://localhost:8501](http://localhost:8501) in the browser.
 - When finished, open a separate terminal.
+  
   ```bash
   docker compose down
   ```
